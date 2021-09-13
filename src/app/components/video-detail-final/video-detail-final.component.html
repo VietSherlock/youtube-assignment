@@ -14,10 +14,10 @@
             <h1 class="title mb-0">{{video.title}}</h1>
             <!-- view and right button -->
             <div class="row video-title py-4 justify-content-between">
-                <div class="video-info col-auto">
+                <div class="video-info col-auto col-sm-auto">
                     <span class="view" style="font-size: 14px;">{{video.view}} lượt xem</span>
                 </div>
-                <div class="video-btnRight col-auto">
+                <div class="video-btnRight col-auto col-sm-auto">
                     <button class="video-button" placement="left" ngbTooltip="Tôi thích video này">
                         <i class="bi bi-hand-thumbs-up"></i>
                         <span>{{video.like}}</span>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <!-- right bar -->
-        <div class="col-lg-auto listVideo-layout">
+        <div class="col-lg-auto col-auto listVideo-layout">
             <div class="list-video" *ngFor="let video of videos" (click)="goToVideoDetail(video.id)">
                 <div class="video-suggest" *ngIf="video.id != videoId">
                     <img class="thumbnail" [src]="video.pictureURL">
