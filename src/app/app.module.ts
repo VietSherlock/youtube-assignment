@@ -14,7 +14,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { HighlightDirective } from './directives/highlight.directive';
 import { VideoDataService } from './services/video-data.service';
-import { VideoDetailComponent } from './components/video-detail/video-detail.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TableManagerComponent } from './components/table-manager/table-manager.component';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +22,6 @@ import { VideoDetailFinalComponent } from './components/video-detail-final/video
 // define routes
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'view-video-detail/:id', component: VideoDetailComponent },
   { path: 'video-manager', component: TableManagerComponent },
   { path: 'view-video-detail-final/:id', component: VideoDetailFinalComponent },
 ];
@@ -34,7 +32,6 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     HighlightDirective,
-    VideoDetailComponent,
     TableManagerComponent,
     VideoDetailFinalComponent
   ],
