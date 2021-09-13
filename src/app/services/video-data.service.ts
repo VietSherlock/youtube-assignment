@@ -96,7 +96,7 @@ export class VideoDataService {
       view: 6,
       like: 0,
       dislike: 0,
-      details: '50.000 lượt xem',
+      details: '50 N lượt xem',
       time: '3 tháng trước'
     },
     
@@ -108,10 +108,10 @@ export class VideoDataService {
       url: 'https://www.youtube.com/embed/tuT_YvD27pU',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg18zd2--TrIwyjcCh5vmZP1Qq5mVrIhLrCJw=s68-c-k-c0x00ffffff-no-rj-mo',
       pictureURL:"https://i.ytimg.com/vi/tuT_YvD27pU/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCePXzRRrydOl2l-NhMYa2wCSW3Ug",
-      view: 6,
+      view: 294000,
       like: 0,
       dislike: 0,
-      details: '294.375 lượt xem',
+      details: '294 N lượt xem',
       time: '5 tháng trước'
     },
 
@@ -155,7 +155,7 @@ export class VideoDataService {
       view: 6,
       like: 0,
       dislike: 0,
-      details: '4.057.993 lượt xem lượt xem',
+      details: '4 Tr lượt xem',
       time: '2 tuần trước'
     },
     {
@@ -169,7 +169,7 @@ export class VideoDataService {
       view: 6,
       like: 0,
       dislike: 0,
-      details: '36.981 lượt xem',
+      details: '36 N lượt xem',
       time: '2 tuần trước'
     },
     {
@@ -226,7 +226,7 @@ export class VideoDataService {
       view: 6,
       like: 0,
       dislike: 0,
-      details: '49.417 lượt xem',
+      details: '49 N lượt xem',
       time: '2 tuần trước'
     },
     {
@@ -270,7 +270,7 @@ export class VideoDataService {
       view: 1,
       like: 1,
       dislike: 1,
-      details: "99.999 lượt xem ",
+      details: "100 N lượt xem ",
       time: '2 năm trước'
     },
 
@@ -285,7 +285,7 @@ export class VideoDataService {
       view: 6,
       like: 0,
       dislike: 0,
-      details: '3.989.198 lượt xem',
+      details: '3.9 Tr lượt xem',
       time: '2 tuần trước'
     },
 

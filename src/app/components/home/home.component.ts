@@ -43,7 +43,8 @@ videos: Video[] = [];
 
 //other functions 
 goToVideoDetail(id: string){
-  this.router.navigateByUrl('/view-video-detail/' + id);
+  // this.router.navigateByUrl('/view-video-detail/' + id);
+  this.router.navigateByUrl('/view-video-detail-final/' + id);
 }
 
 

@@ -18,13 +18,14 @@ import { VideoDetailComponent } from './components/video-detail/video-detail.com
 import { RouterModule, Routes } from '@angular/router';
 import { TableManagerComponent } from './components/table-manager/table-manager.component';
 import { FormsModule } from '@angular/forms';
+import { VideoDetailFinalComponent } from './components/video-detail-final/video-detail-final.component';
 
 // define routes
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'view-video-detail/:id', component: VideoDetailComponent },
   { path: 'video-manager', component: TableManagerComponent },
-
+  { path: 'view-video-detail-final/:id', component: VideoDetailFinalComponent },
 ];
 
 @NgModule({
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HighlightDirective,
     VideoDetailComponent,
-    TableManagerComponent
+    TableManagerComponent,
+    VideoDetailFinalComponent
   ],
   imports: [
     BrowserModule,
