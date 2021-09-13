@@ -1,0 +1,90 @@
+<app-header [sidenav] = sidenav></app-header>
+<!-- side bar and all video -->
+<mat-sidenav-container>
+    <!-- side bar -->
+    <mat-sidenav mode="over">
+        <button routerLink="/" class="menu-button" appHighlight>
+            <i class="bi bi-house"></i>
+            <span>Trang chủ</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-compass"></i>
+            <span>Khám phá</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-collection-play"></i>
+            <span>Kênh đăng ký</span>
+        </button>
+
+        <hr>
+
+        <button class="menu-button">
+            <i class="bi bi-files"></i>
+            <span>Thư viện</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-check2-circle"></i>
+            <span>Video đã xem</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-play-btn"></i>
+            <span>Video của bạn</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-clock"></i>
+            <span>Xem sau</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <span>Video đã thích</span>
+        </button>
+    
+        <hr>
+
+        <button routerLink="/video-manager" class="menu-button" >
+            <i class="bi bi-gear"></i>
+            <span>Quản trị Video</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-flag"></i>
+            <span>Lịch sử báo cáo</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-question-circle"></i>
+            <span>Trợ giúp</span>
+        </button>
+        <button class="menu-button">
+            <i class="bi bi-chat-left"></i>
+            <span>Gửi phản hồi</span>
+        </button>
+    </mat-sidenav>
+
+    <!-- list all video -->
+    <mat-sidenav-content>
+        <div class="container content mt-4 px-2">
+            <div class="row justify-content-center px-2">
+                <div class="col-auto card" *ngFor="let video of videos" (click)="goToVideoDetail(video.id)">
+                    <img class="card-img-top" [src]="video.pictureURL" alt="Card image">
+                    <div class="card-body">
+                        <!-- <div class="ava-title"> -->
+                            <div class="ava-title">
+                                <img class="avatar rounded-circle" [src]="video.avatarurl" alt="avatar">
+                                <span class="card-title"> {{video.title}} </span>
+                            </div>
+                        <!-- </div> -->
+                        <br>
+                        <div class="auth-view">
+                            <p class="card-username">{{video.author}}</p>
+                            <p class="card-view">{{video.details}}</p> 
+                            <p class="card-time">{{video.time}}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="content mat-elevation-z8">
+            Main content here!
+        </div> -->
+    </mat-sidenav-content>
+</mat-sidenav-container>

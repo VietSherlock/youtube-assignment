@@ -1,0 +1,54 @@
+<div class="container-fluid header px-3">
+    <div class="row align-items-center justify-content-between px-3">
+
+        <!-- logo and guide button -->
+        <div class="col-2.5 px-0">
+            <div class="row no-gutters">
+                <!-- guide button -->
+                <div class="col-auto">
+                    <button class="guide-button pr-2" (click)="sidenav.toggle()">
+                        <i class="bi bi-list" style="font-size: 1.5rem; color: #030303;"></i>
+                    </button>
+                </div>
+                <!-- logo youtube -->
+                <div class="col-auto px-3">
+                    <a routerLink="/" placement="right" ngbTooltip="Trang chủ Youtube">
+                        <img class="youtube-icon" src="assets/logos/Youtube-logo.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- input search and voice button search -->
+        <div *ngIf="innerWidth >= 833" class="col-6 box">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <label for="" class="icon" placement="bottom" ngbTooltip="Tìm kiếm">
+                <i class="bi bi-search"></i>
+                </label>
+            </div>
+        </div>
+
+        
+        <!-- others button -->
+        <div class="col-auto pr-0 right-icon">
+            <!-- button search show when width size of window < 833 -->
+            <button *ngIf="innerWidth < 833" class="buttonResized" placement="bottom" ngbTooltip="Tìm kiếm">
+                <i class="bi bi-search"></i>
+            </button>
+
+            <button class="px-3" placement="bottom" ngbTooltip="Tạo">
+                <i class="bi bi-camera-video" style="font-size: 1.25rem;"></i>
+            </button>
+            <button class="px-3" placement="bottom" ngbTooltip="Các ứng dụng Youtube">
+                <i class="bi bi-grid-3x3-gap" style="font-size: 1.25rem;"></i>
+            </button>
+            <button class="px-3" placement="bottom" ngbTooltip="Thông báo">
+                <i class="bi bi-bell" style="font-size: 1.25rem;"></i>
+            </button>
+            <button class="px-1.5" style="width: 60px; height: 40px;">
+                <img class="rounded-circle mb-1" src="https://via.placeholder.com/32">
+            </button>
+        </div>
+    </div>
+</div>
